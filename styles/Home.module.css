@@ -13,8 +13,7 @@
 }
 
 .footer {
-  display: flex;
-  flex: 1;
+  display: grid;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -22,10 +21,9 @@
 }
 
 .footer a {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
@@ -42,7 +40,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
