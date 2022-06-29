@@ -1,0 +1,28 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: {
+      colors:{
+        'regal-blue': '#243c5a',
+      }
+    },
+    fontFamily: {
+      jost: ["Jost", "sans-serif"],
+      sen: ["Sen", "sans-serif"],
+    },
+  
+    screens: {
+      custom: "400px",
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('flowbite/plugin')
+  ],
+}

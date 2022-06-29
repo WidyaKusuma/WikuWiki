@@ -1,31 +1,82 @@
 import type { NextPage } from 'next'
 
+//Permission
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-
-
-
+//File
 import About from '../components/about/About'
 import Blogpost from '../components/blogpost/Blogpost'
 import Contact from '../components/contact/Contact'
 import MyProject from '../components/myproject/MyProject'
 
 
-
+//Home
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <main className='bg-top bg-cover bg-no-repeat bg-fixed w-screen h-full'
+      style={{backgroundImage : 'url(/assests/img/Background.jpg)'}}>
+      
+      {/*Title*/}
       <title>Wiku Wiki</title>
       <link rel="icon" href="/favicon.ico" />
+      
+      {/*Padding*/}
+      <div className='px-2 sm:px-8 md:px-10 lg:px-48 xl:px-50'>
 
- {/*  
+        {/*Profile*/}
+        <div className="min-h-screen flex flex-col justify-center items-center ">
+          <Image
+            src="/assests/img/MyFace.png"
+            width="220"
+            height="220"
+            alt="avatar"
+          />
+          <div className='text-center font-semibold text-3xl px-9 py-9'>
+            <h1 className='mb-4'>DEWA MADE WIDYA KUSUMA</h1>
+            <h3>Front-End Trainee at Taksu Teknologi Bali</h3>
+          </div>
+        </div>
+
+
+        {/*Components*/}
+        <div>
+        <About></About>
+        <MyProject></MyProject>
+        <Blogpost></Blogpost>
+        </div>
+          
+
+        {/*Footer*/}
+        {/* <footer className={styles.footer}>
+        <Contact></Contact>
+          <h1>Powered by </h1>
+        </footer> */}
+
+
+      </div>
+
+      <footer>
+        <Contact></Contact>
+        <div className='text-center'>
+          <h1>Powered by </h1>
+        </div>
+      </footer>
+    </main>
+    
+
+  )
+}
+
+export default Home
+
+      {/*  
       <header className={styles.header}>
         <a>Home </a><a>About me </a><a>My Project </a><a>Blogpost </a><a>Contact </a>
       </header>
-*/}
+      */}
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <Image
           src="/assests/img/MyFace.png"
           width="170"
@@ -34,19 +85,7 @@ const Home: NextPage = () => {
         />
         <h1 className={styles.title}>Dewa Made Widya Kusuma</h1>
         <h3>        Front-End Trainee at Taksu Teknologi Bali</h3>
-      </main>
-
-      <About></About>
-      <MyProject></MyProject>
-      <Blogpost></Blogpost>
-      <Contact></Contact>
-
-      <footer className={styles.footer}>
-        <h1>Powered by</h1>
-      </footer>
-    </div>
-  )
-
+      </main> */}
 /* template from next js
   return (
     <div className={styles.container}>
@@ -116,6 +155,3 @@ const Home: NextPage = () => {
     </div>
   )
   */
-}
-
-export default Home
