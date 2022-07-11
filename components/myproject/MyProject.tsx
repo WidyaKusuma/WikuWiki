@@ -29,9 +29,9 @@ export default function MyProject(){
        
 
     return (
-        <main className="bg-rose-600 py-6">
+        <main className="bg-gray-800 py-6 text-white">
             <div className="font-semibold mx-20 py-16">
-                <h1 className="text-xl pb-6">MY PROJECT ON GITHUB</h1>
+                <h1 className="font-bold text-3xl pb-6">MY PROJECT ON GITHUB</h1>
                     {/*RepoListCard*/}
                     <ul className="pl-6 pb-6">
                         {   
@@ -40,7 +40,7 @@ export default function MyProject(){
                             (<li key={repo.name}> 
                                 {/*RepoLinkInteract*/}
                                 <a href={repo.html_url} target="blank" className="flex flex-col justify-center items-center text-center">
-                                    <div className="bg-slate-500 max-w-xs rounded overflow-hidden shadow-lg my-2 mx-2.5">
+                                    <div className="bg-indigo-900 max-w-xs rounded overflow-hidden shadow-lg my-2 mx-2.5">
                                     <Image
                                         className="w-full" alt="Github Card"
                                         src="/assests/img/Background.jpg"
@@ -58,6 +58,12 @@ export default function MyProject(){
                         }
                     </ul>
                 
+            </div>    
+        </main>
+    )
+}
+
+
                 {/* BACKUP CALL API */}
                     {/* <ul className="pl-6 pb-6">
                         {
@@ -104,14 +110,8 @@ export default function MyProject(){
                     </div>
                 </div> */}
 
-
-            </div>    
-        </main>
-    )
-}
-
  
-////////////////API
+////////////////TEST API
 // async function getUserRepos(username:string) {
 //     const repos = await fetch(`https://api.github.com/users/${username}/repos`);
 //     return repos;

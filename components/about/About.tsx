@@ -2,12 +2,13 @@ import Image from 'next/image'
 
 export default function AboutMe(){
     return (
-        <main className="bg-red-500 pb-16">
+        <main className="bg-gray-800 pb-16 text-white
+        border-t-8 rounded-t-3xl border-blue-600">
 
             {/*MyDescription*/}
             <div className="font-semibold mx-20 py-16">
-                <h1 className="text-xl pb-6">ABOUT ME</h1>
-                <p className="pl-6">
+                <h1 className="font-bold text-3xl pb-6">ABOUT ME</h1>
+                <p className="pl-6 indent-8">
                     Learn programming since 2017, Looking for more experience so I can build my own personal websites. <br/>
                     Like to modification stuff that I have never try. Self-Motivation person. Love playing RPG Video Game. <br/>
                     Like to listen most of genre music especially Japanese Acoustic Song. Still chasing graduation.
@@ -15,7 +16,7 @@ export default function AboutMe(){
             </div>
 
             {/* Card */}
-            <div className="bg-red-200 flex justify-center items-center mx-16 py-16
+            <div className=" flex justify-center items-center mx-16 py-16
             font-semibold">
                 {/* First card */}
                 <h3 className='mx-6'>SKILL I LEARN <br/>THIS MONTH</h3>
